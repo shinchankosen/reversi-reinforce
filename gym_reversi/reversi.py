@@ -16,7 +16,7 @@ def make_random_policy(np_random):
         # No places left
         if len(possible_places) == 0:
             return d**2 + 1
-        a = np_random.randint(len(possible_places))
+        a = np_random.integers(len(possible_places))
         return possible_places[a]
     return random_policy
 
