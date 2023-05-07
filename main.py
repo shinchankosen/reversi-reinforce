@@ -23,4 +23,3 @@ for i_episode in range(20):
             print(f'black score = {black_score}')
             print(f'white score = {white_score}')
             break
-        
