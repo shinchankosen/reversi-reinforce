@@ -176,11 +176,11 @@ class ReversiEnv(gym.Env):
             outfile.write(' ' +  str(i + 1) + '  |')
             for j in range(board.shape[1]):
                 if board[2, i, j] == 1:
-                    outfile.write('  O  ')
+                    outfile.write('     ')
                 elif board[0, i, j] == 1:
-                    outfile.write('  B  ')
+                    outfile.write('  O  ')
                 else:
-                    outfile.write('  W  ')
+                    outfile.write('  X  ')
                 outfile.write('|')
             outfile.write('\n')
             outfile.write(' ' )
