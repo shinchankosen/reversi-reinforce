@@ -164,16 +164,19 @@ class ReversiEnv(gym.Env):
             return
         board = self.state
         outfile = StringIO() if mode == 'ansi' else sys.stdout
-
-        outfile.write(' ' * 7)
+        
+        outfile.write('\n')
+        outfile.write(' ' * 10)
         for j in range(board.shape[1]):
             outfile.write(' ' +  str(j + 1) + '  | ')
         outfile.write('\n')
         outfile.write(' ' * 5)
-        outfile.write('-' * (board.shape[1] * 6 - 1))
+        outfile.write('-' * (board.shape[1] * 7 - 4))
+        outfile.write('\n')
         outfile.write('\n')
         for i in range(board.shape[1]):
-            outfile.write(' ' +  str(i + 1) + '  |')
+            # outfile.write('\n')
+            outfile.write('   ' +  str(i + 1) + '    |')
             for j in range(board.shape[1]):
                 if board[2, i, j] == 1:
                     outfile.write('     ')
@@ -186,6 +189,7 @@ class ReversiEnv(gym.Env):
             outfile.write(' ' )
             outfile.write('-' * (board.shape[1] * 7 - 1))
             outfile.write('\n')
+            
 
         if mode != 'human':
             return outfile

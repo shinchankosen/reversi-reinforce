@@ -19,5 +19,7 @@ for i_episode in range(20):
         if done:
             print("Episode finished after {} timesteps".format(t+1))
             black_score = len(np.where(env.state[0,:,:]==1)[0])
-            print(black_score)
+            white_score = len(np.where(env.state[0,:,:]==0)[0])
+            print(f'black score = {black_score}')
+            print(f'white score = {white_score}')
             break
