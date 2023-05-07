@@ -1,6 +1,6 @@
 # オセロ強化学習練習用
 
-[これ](https://qiita.com/pigooosuke/items/8865c3a51556453d6484)を参考にして、そこにある(リンク先)[https://github.com/pigooosuke/gym_reversi] のレポジトリをforkしました。
+[これ](https://qiita.com/pigooosuke/items/8865c3a51556453d6484)を参考にして、そこにある (リンク先)[https://github.com/pigooosuke/gym_reversi] のレポジトリをforkしました。
 
 
 
