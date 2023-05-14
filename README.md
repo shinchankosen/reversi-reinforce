@@ -2,6 +2,8 @@
 
 [これ](https://qiita.com/pigooosuke/items/8865c3a51556453d6484)を参考にして、そこにある [リンク先](https://github.com/pigooosuke/gym_reversi) のレポジトリをforkしていろいろ改造
 
+肝心の強化学習ができなくておわり
+
 
 
 ```sh
