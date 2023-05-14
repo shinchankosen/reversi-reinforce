@@ -14,6 +14,7 @@ for i_episode in range(20):
         # random select (update learning method here)
         else:
             action = random.choice(enables)
+            # ここで選択
         observation, reward, done, info = env.step(action)
         env.render()
         if done:
